@@ -1,5 +1,5 @@
 ---
-use_math = true
+use_math: true
 ---
 # **기본적 세팅**
 
