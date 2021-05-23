@@ -1,6 +1,9 @@
 ---
 layout: single
 title:  "How to LogisticRegression!"
+
+use_math: true
+comments: true
 ---
 
 # **기본적 세팅**
