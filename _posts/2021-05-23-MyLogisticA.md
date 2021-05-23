@@ -161,10 +161,10 @@ y = (iris["target"] == 2).astype(np.int)  # 버지니카(Virginica) 품종일 �
 모든 샘플에 편향을 추가한다. 이유는 아래 수식을 행렬 연산으로 보다 간단하게
 처리하기 위해 0번 특성값 $x_0$이 항상 1이라고 가정하기 때문이다. 
 
-$$
+
 \theta_0\cdot 1 + \theta_1\cdot x_1 + \cdots + \theta_n\cdot x_n =
 \theta_0\cdot x_0 + \theta_1\cdot x_1 + \cdots + \theta_n\cdot x_n
-$$
+
 
 
 ```python
