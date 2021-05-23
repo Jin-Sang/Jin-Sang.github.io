@@ -8,7 +8,7 @@ comments: true
 
 # **기본적 세팅**
 
-\\[ \log_2 2 \\]
+\[ \log_2 2 \]
 ```python
 # 파이썬 ≥3.5 필수
 import sys
