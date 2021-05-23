@@ -282,9 +282,9 @@ defaults:
       related: true
       
      
-# Math equation
+# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false  
+incremental: false
