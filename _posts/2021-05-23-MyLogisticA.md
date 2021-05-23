@@ -1,3 +1,7 @@
+---
+layout: single
+title:  "How to LogisticRegression!"
+---
 
 # **기본적 세팅**
 
