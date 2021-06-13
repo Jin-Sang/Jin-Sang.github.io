@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "My "
+
+use_math: true
+
+---
+
 
 # ***문제 1 : 엑스트라 트리 직접 구현***
 
