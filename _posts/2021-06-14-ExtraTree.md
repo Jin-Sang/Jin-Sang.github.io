@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "My "
+title:  "My ExtraTreesClassifier"
 
 use_math: true
 
