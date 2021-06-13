@@ -5,7 +5,7 @@ title:  "My ExtraTreesClassifier"
 use_math: true
 
 ---
-
+# Machine Learning
 
 # ***문제 1 : 엑스트라 트리 직접 구현***
 
