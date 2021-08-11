@@ -21,7 +21,7 @@ use_math: true
 두 종류의 경로 모드가 존재
 
 * SmoothAlongRoute 방식 : 웨이포인트를 부드럽게 연결 경로<br/><br/>
-AI가 부드러운 속도와 주행목표지점 조정으로 인간과 자연스러운 주행을 구현
+AI가 부드러운 속도와 주행목표지점 조정으로 인간과 자연스러운 주행을 구현<br/>
 ![3](https://user-images.githubusercontent.com/80252681/129057707-8c70e233-7d89-49f2-937a-6a3f29d8cb93.jpg)
 ![1](https://user-images.githubusercontent.com/80252681/129056815-5201d9db-e12c-41d9-88d2-7f84039c7724.jpg)
 
