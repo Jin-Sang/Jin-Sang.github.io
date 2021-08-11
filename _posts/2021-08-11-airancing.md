@@ -38,7 +38,7 @@ PointToPoint 방식
 ![2](https://user-images.githubusercontent.com/80252681/129058248-c6347365-0dd7-4cbb-a76c-f18c47c4db78.jpg)
 
 
-
+<br/><br/>
 ## **3.1 SmoothAlongRoute 방식 설명**
 <br/>
 * 핵심은 웨이포인트들을 부드러운 곡선으로 연결하는 방식이다.<br/>
