@@ -44,5 +44,44 @@ PointToPoint 방식
 
 * 핵심은 웨이포인트들을 **부드러운 곡선으로 연결하는 방식**이다.<br/>
 (PointToPoint 방식은 직선으로 연결하는 것이니 추가 설명은 않는다.)
+<br/>
+웨이포인트를 연결하여 경로를 얻는 부분입니다.
+<br/>
+```csharp
+if (smoothRoute)
+            {
+                // smooth catmull-rom calculation between the two relevant points
 
 
+                // get indices for the surrounding 2 points, because
+                // four points are required by the catmull-rom function
+                p0n = ((point - 2) + numPoints)%numPoints;
+                p3n = (point + 1)%numPoints;
+
+                // 2nd point may have been the 'last' point - a dupe of the first,
+                // (to give a value of max track distance instead of zero)
+                // but now it must be wrapped back to zero if that was the case.
+                p2n = p2n%numPoints;
+
+                P0 = points[p0n];
+                P1 = points[p1n];
+                P2 = points[p2n];
+                P3 = points[p3n];
+
+                return CatmullRom(P0, P1, P2, P3, i);
+            }
+
+```
+<br/>
+여기서 주목해야 할 부분은 최종적으로 리턴하는 **CatmullRom** 입니다.<br/>
+```csharp
+private Vector3 CatmullRom(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float i)
+        {
+            // comments are no use here... it's the catmull-rom equation.
+            // Un-magic this, lord vector!
+            return 0.5f*
+                   ((2*p1) + (-p0 + p2)*i + (2*p0 - 5*p1 + 4*p2 - p3)*i*i +
+                    (-p0 + 3*p1 - 3*p2 + p3)*i*i*i);
+        }
+        ```
+CatmullRom은 
