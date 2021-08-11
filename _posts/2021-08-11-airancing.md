@@ -231,7 +231,7 @@ Vector3.Dot
 ```
 이것은 내적을 말합니다. 
 ![10](https://user-images.githubusercontent.com/80252681/129086079-7e8cda7c-e4d7-4afa-9c66-dc103de4a35a.jpg)
-
+$\theta$ 는 두 벡터 사이의 각을 말합니다.
 
 
 
