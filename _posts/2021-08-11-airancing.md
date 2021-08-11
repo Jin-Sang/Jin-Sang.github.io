@@ -347,9 +347,41 @@ case BrakeCondition.TargetDirectionDifference:
 
 * 반면, **PointToPoint의 경우**는 **목표 설정이 비교적 시간적, 공간적으로 간격이 큽니다.**
 따라서 갑작스러운 목표 변화에 따른 갑작스러운 속도 변화 또는 방향 전환 등, 
-부자연스러운 주행이 될 수 밖에 없습니다.<br/><br/><br/><br/>
+부자연스러운 주행이 될 수 밖에 없습니다.<br/><br/><br/>
+
+&#128584;**차량 충돌시 대처
+
+```csharp
+// Evasive action due to collision with other cars:
+
+                // our target position starts off as the 'real' target position
+                Vector3 offsetTargetPos = m_Target.position;
+
+                // if are we currently taking evasive action to prevent being stuck against another car:
+                if (Time.time < m_AvoidOtherCarTime)
+                {
+                    // slow down if necessary (if we were behind the other car when collision occured)
+                    desiredSpeed *= m_AvoidOtherCarSlowdown;
+
+                    // and veer towards the side of our path-to-target that is away from the other car
+                    offsetTargetPos += m_Target.right*m_AvoidPathOffset;
+                }
+                else
+                {
+                    // no need for evasive action, we can just wander across the path-to-target in a random way,
+                    // which can help prevent AI from seeming too uniform and robotic in their driving
+                    offsetTargetPos += m_Target.right*
+                                       (Mathf.PerlinNoise(Time.time*m_LateralWanderSpeed, m_RandomPerlin)*2 - 1)*
+                                       m_LateralWanderDistance;
+                }
+```
+차량 충돌시 대처 하는 방법입니다. <br/>
+충돌을 피하기 위해 속도를 줄이고(m_AvoidOtherCarSlowdown을 곱해서) 경로를 우회, 즉 목표를 우회(m_AvoidPathOffset을 곱해서)하는 방법이 있고<br/><br/>
+
+혹은 임의의 방법으로 가로질러 가게 하여 로봇처럼 보이지 않고, 사람처럼 보이게 할 수 있습니다.
 
 
+<br/><br/><br/><br/>
 ***최종 정리***<br/><br/>
 
 먼저 3장에서  &#128678;경로 만드는 법을 보았고,<br/>
@@ -358,3 +390,11 @@ case BrakeCondition.TargetDirectionDifference:
 
 인간이 목적지의 경로를 파악하고(3장), 순간순간 목표를 확인하고(4장), 실제 차량을 모는 것(5장)<br/>
 과 같은 순서로 알아보았습니다. 
+
+
+
+<br/><br/><br/><br/><br/><br/>
+**추가 해야할 점**<br/><br/>
+
+* 강화 학습을 통한 AI 훈련 
+
