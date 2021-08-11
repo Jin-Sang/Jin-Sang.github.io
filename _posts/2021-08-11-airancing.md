@@ -403,4 +403,10 @@ case BrakeCondition.TargetDirectionDifference:
   * 5장 AI가 경로를 최대한 잘 따라서 주행하게 하는 것<br/>
     ( 이미 주행 방식이 주어져있다...)<br/><br/>
     
-이 부분을 어떻게 해결해야 할지 모르겠습니다.
+이 부분을 어떻게 해결해야 할지 모르겠습니다.<br/><br/><br/><br/><br/>
+
+
+스크립트 파일은 깃허브 리포지토리 SCRIPT 파일에 넣어 두겠습니다.
+
+
+
