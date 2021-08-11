@@ -124,14 +124,17 @@ NON-SmoothRoute 방식
 AI차량이 어떻게 주행하는지 보겠습니다.
 <br/><br/>
 
-# **4. AI 차량의 서킷운행 모드 **
+
+# **4. AI 차량의 서킷운행 모드**
 
 (참고 스크립트 : WaypointProgressTracker.cs)
 
 두 종류의 서킷운행 모드가 존재
 
 * SmoothAlongRoute 모드 : 생성된 경로를 인식하여 현재 위치에서 경로의 어느 정도의 앞을 목표로 삼아 운행<br/>
-( 실제로 사람이 눈으로 가까운 앞을 보고 운전하듯이 운행한다. ) 
+( 실제로 사람이 눈으로 가까운 앞을 보고 운전하듯이 운행한다. ) <br/>
+
+https://user-images.githubusercontent.com/80252681/129072471-61360184-d3b3-41db-9877-b5e9d500cb50.mp4
 
 
 * PointToPoint 모드 : 생성된 경로를 인식하지 않고 웨이포인트를 순차적으로 목표로 삼아 운행<br/>
