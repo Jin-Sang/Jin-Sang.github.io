@@ -99,7 +99,18 @@ CatmullRom은 **캣멀롬** 스플라인 이라고 하는데 네 점(p0~p4)이 �
 컴퓨터 그래픽에서 한 점에서 한점으로 이동하는 대상의 부드러운 움직임을 구현할 때 많이 사용됩니다.<br/>
 ~~부드러운 곡선을 만드는 것으로 **베지어 곡선**이란 것도 있는데, 둘의 큰 차이점은 캣멀롬은 웨이포인트를 통과하고 베지어는 꼭 통과하지 않고 유사하게 움지역 곡선을 만든다는 차이가 있습니다~~
 
-<br/><br/>***실제 경로 생성 사진***<br/>
+<br/><br/>***IN-GAME 경로 생성 사진***<br/><br/>
+
+SmoothRoute 방식 <br/><br/>
+
+![6](https://user-images.githubusercontent.com/80252681/129066023-fa6f2f1f-4cbc-4e36-83bf-a56a54ed2104.jpg)
+
+NON-SmoothRoute 방식
+<br/><br/>
+![7](https://user-images.githubusercontent.com/80252681/129066358-dbe6e327-4178-4672-b7bf-4e612fa608c2.jpg)
+
+
+
 
 
 <br/><br/><br/>
