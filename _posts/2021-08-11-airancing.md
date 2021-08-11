@@ -22,7 +22,7 @@ use_math: true
 * AI 차량의 서킷운행 방식
 * AI 차량의 주행 방식<br/><br/>
 
-# **3. Waypoint를 이용한 경로 설정**
+# **3. Waypoint를 이용한 경로 설정** &#128678;
 
 (참고 스크립트 : WaypointCircuit.cs)
 
@@ -132,7 +132,7 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 <br/><br/>
 
 
-# **4. AI 차량의 서킷운행 모드**
+# **4. AI 차량의 서킷운행 모드**&#128665;
 
 (참고 스크립트 : WaypointProgressTracker.cs)
 
@@ -238,5 +238,5 @@ SmoothAlongRoute|운행 by 경로
 PointToPoint|운행 by 웨이포인트
 
 
-# **5. AI 차량의 서킷운행 모드**
+# **5. AI 차량의 주행 방식**&#128692;
 (참고 스크립트 : CarAiControl.cs)
