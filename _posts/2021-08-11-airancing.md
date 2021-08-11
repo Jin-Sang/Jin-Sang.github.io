@@ -136,7 +136,7 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 
 <br/> 차량 앞의 초록색(형광색) 선은 차량이 향하고자 하는 목표입니다.
 
-https://user-images.githubusercontent.com/80252681/129072471-61360184-d3b3-41db-9877-b5e9d500cb50.mp4
+{% include video id="gyy6s5fxehE" provider="youtube" %}
 차량이 
 
 
