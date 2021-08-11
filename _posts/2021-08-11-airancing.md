@@ -33,7 +33,7 @@ SmoothAlongRoute 방식 <br/>
 ![3](https://user-images.githubusercontent.com/80252681/129057707-8c70e233-7d89-49f2-937a-6a3f29d8cb93.jpg)<br/>
 ![1](https://user-images.githubusercontent.com/80252681/129056815-5201d9db-e12c-41d9-88d2-7f84039c7724.jpg)
 
-PointToPoint  
+PointToPoint 방식
 <br/>
 ![2](https://user-images.githubusercontent.com/80252681/129058248-c6347365-0dd7-4cbb-a76c-f18c47c4db78.jpg)
 
