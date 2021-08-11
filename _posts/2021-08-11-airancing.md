@@ -105,10 +105,13 @@ SmoothRoute 방식 <br/><br/>
 
 ![6](https://user-images.githubusercontent.com/80252681/129066023-fa6f2f1f-4cbc-4e36-83bf-a56a54ed2104.jpg)
 
+부드러운 곡선의 경로가 나타난 것이 확인됩니다.
+
 NON-SmoothRoute 방식
 <br/><br/>
 ![7](https://user-images.githubusercontent.com/80252681/129066358-dbe6e327-4178-4672-b7bf-4e612fa608c2.jpg)
 
+각이 부드럽지 않고 뾰족한 경로가 생성되었습니다.
 
 
 
