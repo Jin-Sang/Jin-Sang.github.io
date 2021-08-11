@@ -193,7 +193,7 @@ if (progressStyle == ProgressStyle.SmoothAlongRoute)
 progressDistance(경로에서 현재 위치)에서 Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값을 더해서 그 만큼 앞을 보고있습니다.<br/>
 즉, **Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞**을 보고 있습니다.
 
-## **AI는 어떻게 현위치를 파악하고 있을까?**
+**중요 : 어떻게 현위치를 파악하고 있을까?**
 
 
 
