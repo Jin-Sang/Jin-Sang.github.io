@@ -382,7 +382,7 @@ case BrakeCondition.TargetDirectionDifference:
 
 
 <br/><br/><br/><br/>
-***최종 정리***<br/><br/>
+&#128703;***최종 정리***<br/><br/>
 
 먼저 3장에서  &#128678;경로 만드는 법을 보았고,
 4장에서 &#128665;운행 중 목표를 설정하는 법을 보았고,
@@ -394,7 +394,7 @@ case BrakeCondition.TargetDirectionDifference:
 
 
 <br/><br/><br/><br/><br/><br/>
-**추가 해야할 점**<br/><br/>
+&#10067;**추가 해야할 점**<br/><br/>
 
 * 강화 학습을 통한 AI 훈련<br/>
 훈련을 시킨다면 어떤 식으로 해야할지 고민이 되었습니다.<br/> 
