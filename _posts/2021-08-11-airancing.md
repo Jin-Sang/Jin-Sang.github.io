@@ -163,9 +163,9 @@ AI차량이 어떻게 주행하는지 보겠습니다.
         // whether to update the position smoothly along the route (good for curved paths) or just when we reach each waypoint.
 ```
 
-SmoothAlongRoute 모드에서 현위치에서 앞을 보는 범위를 설정하는 범위(Offset)와 가중치(Factor)입니다.<br/>
-Target(순간순간의 운행목표)와 Speed(속도) 조절을 위한 미리보기 범위를 설정하는 것입니다.<br/>
-즉, 항상 경로의 현위치에서 일정량 앞을 보고 있습니다. <br/>
+SmoothAlongRoute 모드에서 **현위치에서 앞을 보는 범위를 설정**하는 범위(Offset)와 가중치(Factor)입니다.<br/>
+**Target(순간순간의 운행목표)와 Speed(속도) 조절을 위한 미리보기** 범위를 설정하는 것입니다.<br/>
+즉, **항상 경로의 현위치에서 일정량 앞**을 보고 있습니다. <br/><br/>
 밑의 코드를 보면 이해가 더 잘 됩니다.<br/>
 
 ```csharp
@@ -191,7 +191,9 @@ if (progressStyle == ProgressStyle.SmoothAlongRoute)
 ```
 
 progressDistance(경로에서 현재 위치)에서 Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값을 더해서 그 만큼 앞을 보고있습니다.<br/>
-즉, Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞을 보고 있습니다.
+즉, **Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞**을 보고 있습니다.
+
+## **어떻게 현위치를 파악하고 있을까?**
 
 
 
