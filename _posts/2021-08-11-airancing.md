@@ -18,7 +18,7 @@ use_math: true
 
 # **3. Waypoint를 이용한 경로 설정**
 
-두 종류의 경로 모드가 존재 : SmoothAlongRoute 방식 PointToPoint 방식
+두 종류의 경로 모드가 존재
 
 * SmoothAlongRoute 방식 : 웨이포인트에 의해 만들어진 부드러운 경로<br/>
 AI가 부드러운 속도와 주행목표지점 조정으로 인간과 자연스러운 주행을 구현
