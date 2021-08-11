@@ -160,11 +160,9 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 경로생성|특징요약
 ---|---
 SmoothRoute|곡선 경로
----|---
 Non-SmoothRoute|직선 경로
 
 운행방식|특징요약
 ---|---
 SmoothAlongRoute|운행 by 경로
----|---
 PointToPoint|운행 by 웨이포인트
