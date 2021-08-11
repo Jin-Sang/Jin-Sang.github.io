@@ -27,7 +27,7 @@ AI가 부드러운 속도와 주행목표지점 조정으로 인간과 자연스
 * PointToPoitn 방식 : 오로지 웨이포인트를 직선으로 연결한 경로<br/><br/>
 점대점을 직선으로 이동하므로 AI가 딱딱하고 갑작스러운 주행을 보인다.
 
-<간단한 비교><br/>
+*간단한 비교<br/>
 <br/><br/><br/>
 ![3](https://user-images.githubusercontent.com/80252681/129057707-8c70e233-7d89-49f2-937a-6a3f29d8cb93.jpg)<br/><br/>
 SmoothAlongRoute 방식 <br/><br/>
