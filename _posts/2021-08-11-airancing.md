@@ -225,6 +225,27 @@ progressDelta는 progressPoint(지금까지 운행을 경로 위에 표시했을
 ![9](https://user-images.githubusercontent.com/80252681/129085101-9aef832c-344f-463a-a371-0ffec76cba64.jpg)<br/>
 즉, 보라색 벡터가 progressDelta 입니다.
 
+그리고
+```csharp
+Vector3.Dot
+```
+이것은 내적을 말합니다. 
+![10](https://user-images.githubusercontent.com/80252681/129086079-7e8cda7c-e4d7-4afa-9c66-dc103de4a35a.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * **PointToPoint** 모드 : 생성된 **경로를 인식하지 않고 웨이포인트를 순차적으로 목표**로 삼아 운행<br/><br/>
 ( 경로를 무시하고 웨이포인트만 보고 간다.)<br/><br/>
