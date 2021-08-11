@@ -214,7 +214,11 @@ progressDistance(경로에서 현재 거리)에서 Offset(미리보는 범위)�
 Vector3.Dot(progressDelta, progressPoint.direction) < 0
 ```
 특히 이 부분에서 오랜 시간이 걸렸습니다.<br/>
-먼저 
+먼저 progressPoint는 현재 경로 상으로 따졌을 때 진행위치입니다. progressDistance 경로를 따라 진행된 거리에 의해 구해집니다.<br/>
+차량은 항상 경로위에만 있을 수 없습니다.(물리적인 이유)<br/>
+***progressDistance는 단순히 얼마나 움직인 거리를 말하는 것이 아니라 경로를 기준으로 얼마만큼 경로의 진행방향으로 진행했냐는 것입니다.***<br/><br/>
+
+progressDelta는 progressPoint(지금까지 운행을 경로 위에 표시했을 때 위치, 즉 진행 상태)와 실제 지금 차량 위치의 차이를 나타내는 벡터입니다. 
 
 
 * **PointToPoint** 모드 : 생성된 **경로를 인식하지 않고 웨이포인트를 순차적으로 목표**로 삼아 운행<br/><br/>
