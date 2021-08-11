@@ -166,3 +166,6 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 ---|---
 SmoothAlongRoute|운행 by 경로
 PointToPoint|운행 by 웨이포인트
+
+
+# **5. AI 차량의 서킷운행 모드**
