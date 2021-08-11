@@ -19,9 +19,12 @@ use_math: true
 # **2. 설명 내용**
 
 * 주행 경로 만들기
-* AI 차량의 주행방식
+* AI 차량의 경로운행 방식
+* AI 차량의 주행 방식
 
 # **3. Waypoint를 이용한 경로 설정**
+
+(참고 스크립트 : WaypointCircuit.cs)
 
 두 종류의 경로 모드가 존재
 
@@ -121,6 +124,15 @@ NON-SmoothRoute 방식
 AI차량이 어떻게 주행하는지 보겠습니다.
 <br/><br/>
 
-# **4. AI 차량의 주행 방법**
+# **4. AI 차량의 경로운행 모드 **
+
+(참고 스크립트 : WaypointProgressTracker.cs)
+
+두 종류의 경로운행 모드가 존재
+
+* SmoothAlongRoute 모드 : 생성된 경로를 인식하여 경로<br/>
+
+
+* PointToPoint 모드 : 오로지 웨이포인트를 **직선으로 연결**한 경로<br/><br/>
 
 
