@@ -24,7 +24,7 @@ use_math: true
 
 두 종류의 경로 모드가 존재
 
-* SmoothRoute 방식 : 웨이포인트를 **부드럽게 연결** 경로<br/><br/>
+* SmoothRoute 방식 : 웨이포인트를 **부드러운 곡선으로 연결**한 경로<br/>
 
 
 * NON-SmoothRoute 방식 : 오로지 웨이포인트를 **직선으로 연결**한 경로<br/><br/>
@@ -45,7 +45,7 @@ NON-SmoothRoute 방식
 <br/>
 
 * 핵심은 웨이포인트들을 **부드러운 곡선으로 연결하는 방식**이다.<br/>
-(PointToPoint 방식은 직선으로 연결하는 것이니 추가 설명은 않는다.)
+(NON-SmoothRoute 방식은 직선으로 연결하는 것이니 추가 설명은 않는다.)
 <br/>
 
 <br/><br/>
