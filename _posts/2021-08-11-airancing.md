@@ -147,7 +147,7 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 
 차량이 **주행함에 따라 경로를 따라 목표가 바뀌고 있음**이 확인됩니다. (마치 앞을 보고 운전하는 사람같이)<br/><br/>
 ```csharp
- [SerializeField] private float lookAheadForTargetOffset = 5;
+        [SerializeField] private float lookAheadForTargetOffset = 5;
         // The offset ahead along the route that the we will aim for
 
         [SerializeField] private float lookAheadForTargetFactor = .1f;
@@ -162,7 +162,33 @@ AI차량이 어떻게 주행하는지 보겠습니다.
         [SerializeField] private ProgressStyle progressStyle = ProgressStyle.SmoothAlongRoute;
         // whether to update the position smoothly along the route (good for curved paths) or just when we reach each waypoint.
 ```
+SmoothAlongRoute 모드에서 현위치에서 앞을 보는 범위를 설정하는 범위(Offset)와 가중치(Factor)입니다.<br/>
+Target(순간순간의 운행목표)와 Speed(속도) 조절을 위한 미리보기 범위를 설정하는 것입니다.<br/>
+즉, 항상 경로의 현위치에서 일정량 앞을 보고 있습니다. <br/>
+밑의 코드를 보면 이해가 더 잘 됩니다.<br/>
+```csharp
+if (progressStyle == ProgressStyle.SmoothAlongRoute)
+            {
+                // determine the position we should currently be aiming for
+                // (this is different to the current progress position, it is a a certain amount ahead along the route)
+                // we use lerp as a simple way of smoothing out the speed over time.
+                if (Time.deltaTime > 0)
+                {
+                    speed = Mathf.Lerp(speed, (lastPosition - transform.position).magnitude/Time.deltaTime,
+                                       Time.deltaTime);
+                }
+                target.position =
+                    circuit.GetRoutePoint(progressDistance + lookAheadForTargetOffset + lookAheadForTargetFactor*speed)
+                           .position;
+                target.rotation =
+                    Quaternion.LookRotation(
+                        circuit.GetRoutePoint(progressDistance + lookAheadForSpeedOffset + lookAheadForSpeedFactor*speed)
+                               .direction);
 
+
+```
+progressDistance(경로에서 현재 위치)에서 Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값을 더해서 그 만큼 앞을 보고있습니다.<br/>
+즉, Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞을 보고 있습니다.
 
 
 
