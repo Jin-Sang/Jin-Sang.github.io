@@ -319,3 +319,32 @@ PointToPoint|운행 by 웨이포인트
 
 # **5. AI 차량의 주행 방식**&#128692;
 (참고 스크립트 : CarAiControl.cs)
+```csharp
+case BrakeCondition.TargetDirectionDifference:
+                        {
+                            // the car will brake according to the upcoming change in direction of the target. Useful for route-based AI, slowing for corners.
+
+                            // check out the angle of our target compared to the current direction of the car
+                            float approachingCornerAngle = Vector3.Angle(m_Target.forward, fwd);
+
+                            // also consider the current amount we're turning, multiplied up and then compared in the same way as an upcoming corner angle
+                            float spinningAngle = m_Rigidbody.angularVelocity.magnitude*m_CautiousAngularVelocityFactor;
+
+                            // if it's different to our current angle, we need to be cautious (i.e. slow down) a certain amount
+                            float cautiousnessRequired = Mathf.InverseLerp(0, m_CautiousMaxAngle,
+                                                                           Mathf.Max(spinningAngle,
+                                                                                     approachingCornerAngle));
+                            desiredSpeed = Mathf.Lerp(m_CarController.MaxSpeed, m_CarController.MaxSpeed*m_CautiousSpeedFactor,
+                                                      cautiousnessRequired);
+                            break;
+```
+구체적으로 AI 차량이 속도를 조절하는 부분입니다.<br/>
+4장에서 설명한 타깃(목표) 설정에 따라 즉, 미리보기(타깃)를 파악하여 AI는 목표와의 각도와 현재 회전 중인 양을 고려하여 속도를 조절합니다.<br/><br/>
+
+따라서 4장에서의 목표 설정이 부드러운 주행에 중요한 이유가 여기서 드러납니다.<br/>
+지속적으로 부드러운 경로에 맞게 현재 주행에 따라 목표를 설정해주는 SmoothAlongRoute의 경우<br/>
+**연속적이고 부드러운 목표 설정이 계속 이루어지기에** 주행 또한 자연스럽습니다.<br/><br/>
+
+반면, PointToPoint의 경우는 **목표 설정이 비교적 시간적, 공간적으로 간격이 큽니다.**<br/>
+따라서 갑작스러운 목표 변화에 따른 갑작스러운 속도 변화 또는 방향 전환 등, <br/>
+부자연스러운 주행이 될 수 밖에 없습니다.
