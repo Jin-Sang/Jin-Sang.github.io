@@ -267,7 +267,7 @@ $\theta$ 가 $90^\circ$보다 크고 $180^\circ$ 보다 작아야 한다. <br/>
 ***쉽게 말해 각을 통해 경로 상 위치와 $90^\circ$를 이루는 위치까지 인정해준다는 것이다.***<br/>
 ![15](https://user-images.githubusercontent.com/80252681/129093917-03741eb8-c9d8-45d6-86a9-d53eba010d3a.jpg)<br/><br/>
 
-![16](https://user-images.githubusercontent.com/80252681/129095367-2435b40c-0087-4d31-bb82-907a91fd021b.jpg)
+![16](https://user-images.githubusercontent.com/80252681/129095367-2435b40c-0087-4d31-bb82-907a91fd021b.jpg)<br/>
 그래서 경로를 이탈한 경우 이탈한 지점으로 돌아오지 않고 경로상 위치를 인정받고 <br/>
 인정받은 위치를 기준으로 약간의 앞을 목표로 합니다.
 
