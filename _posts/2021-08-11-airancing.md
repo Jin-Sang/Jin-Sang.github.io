@@ -312,6 +312,8 @@ $\theta$ 가 $90^\circ$보다 크고 $180^\circ$ 보다 작아야 한다. <br/>
 SmoothAlongRoute|운행 by 경로
 PointToPoint|운행 by 웨이포인트
 
+<br/><br/><br/><br/>
+
 
 # **5. AI 차량의 주행 방식**&#128692;
 (참고 스크립트 : CarAiControl.cs)
