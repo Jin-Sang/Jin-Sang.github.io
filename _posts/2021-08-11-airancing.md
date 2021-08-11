@@ -406,9 +406,9 @@ case BrakeCondition.TargetDirectionDifference:
 이 부분을 어떻게 해결해야 할지 모르겠습니다.<br/><br/><br/><br/><br/>
 
 
-스크립트 파일은 깃허브 리포지토리(링크)에 넣어 두겠습니다.
+&#127775;스크립트 파일은 깃허브 리포지토리(링크)에 넣어 두겠습니다.
 
-&#127775;https://github.com/Jin-Sang/Jin-Sang.github.io/tree/master/_posts/_2021-AI-Study/_Racing
+https://github.com/Jin-Sang/Jin-Sang.github.io/tree/master/_posts/_2021-AI-Study/_Racing
 
 
 
