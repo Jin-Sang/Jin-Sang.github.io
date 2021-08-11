@@ -240,9 +240,20 @@ Vector3.Dot(progressDelta, progressPoint.direction) < 0
 먼저 어떤 벡터들의 내적을 묻는지 파악해야 합니다.<br/>
 progressPoint.direction는 경로 위로 봤을 때 진행상황에서 위치의 방향을 말합니다.<br/>
 ![11](https://user-images.githubusercontent.com/80252681/129087813-09f579b7-b50e-4c2d-93c6-040299ffb980.jpg)<br/>
-즉 주황색 벡터를 말하며 결론적으로 주황색 벡터와 보라색 벡터의 내적을 사용합니다.
+즉 주황색 벡터를 말하며 결론적으로 주황색 벡터와 보라색 벡터의 내적을 사용합니다.<br/>
+![12](https://user-images.githubusercontent.com/80252681/129088334-5cf0d8da-83bd-4696-a86f-d43567d86786.jpg)<br/><br/>
 
+그렇다면 이 내적값이 음수일 때 
+```csharp
+if (Vector3.Dot(progressDelta, progressPoint.direction) < 0)
+                {
+                    progressDistance += progressDelta.magnitude*0.5f;
+                }
+```
+진행 거리를 그 현 위치와 진행상 위치의 차이만큼 더해주라고 합니다.<br/>
+즉, 쉽게 말해 내적값이 음수일 때 진행이 되고 있게 하라는 것입니다.<br/><br/>
 
+**&#127755;내적값이 음수가 의미하는 것은?**
 
 
 
