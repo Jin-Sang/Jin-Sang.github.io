@@ -222,7 +222,7 @@ progressDelta는 progressPoint(지금까지 운행을 경로 위에 표시했을
 
 
 ![8](https://user-images.githubusercontent.com/80252681/129084512-11b82f7a-4d5b-4e6f-ab8b-61f548e766b8.jpg)
-![9](https://user-images.githubusercontent.com/80252681/129085101-9aef832c-344f-463a-a371-0ffec76cba64.jpg)
+![9](https://user-images.githubusercontent.com/80252681/129085101-9aef832c-344f-463a-a371-0ffec76cba64.jpg)<br/>
 즉, 보라색 벡터가 progressDelta 입니다.
 
 
