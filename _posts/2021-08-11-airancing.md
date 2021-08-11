@@ -153,6 +153,8 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 
 ***실제 주행 중인 차량이 목표를 어디로 보면서 가느냐의 문제인데 이것은 AI차량의 주행(5장) 부분에서 언급하겠지만 속도 조절과 관련되어 부드러운 주행에 큰 영향을 끼친다. 실제 인간은 차의 약간 앞을 보면서(목표)로 하고 주행한다.***
 
-경로|SmoothRoute|Non
+*정리*
+
+경로생성|SmoothRoute|Non
 ---|---|---
-운행|SmoothAlongRoute|PointToPoint
+운행방식|SmoothAlongRoute|PointToPoint
