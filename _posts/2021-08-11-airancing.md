@@ -256,7 +256,7 @@ if (Vector3.Dot(progressDelta, progressPoint.direction) < 0)
 **&#128064;내적값이 음수가 의미하는 것은?**
 
 내적값이 음수 이려면 $\cos\theta$ 가 음수여야 하므로,<br/>
-$\theta$ 가 $$90^\circ$$보다 크고 $$180^\circ$$ 보다 작아야 한다 
+$\theta$ 가 $90^\circ$보다 크고 $180^\circ$ 보다 작아야 한다. 
 
 
 
