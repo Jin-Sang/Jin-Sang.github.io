@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "My Ai Racing Game"
-font-size: 10
+font-size: 5
 use_math: true
 
 ---
