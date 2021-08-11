@@ -221,7 +221,7 @@ Vector3.Dot(progressDelta, progressPoint.direction) < 0
 progressDelta는 progressPoint(지금까지 운행을 경로 위에 표시했을 때 위치, 즉 진행 상태)와 실제 지금 차량 위치의 차이를 나타내는 벡터입니다. 
 
 
-![8](https://user-images.githubusercontent.com/80252681/129084512-11b82f7a-4d5b-4e6f-ab8b-61f548e766b8.jpg)
+![8](https://user-images.githubusercontent.com/80252681/129087184-91690d1c-90ad-4fcf-a6c6-edc2662041d2.jpg)
 ![9](https://user-images.githubusercontent.com/80252681/129085101-9aef832c-344f-463a-a371-0ffec76cba64.jpg)<br/>
 즉, 보라색 벡터가 progressDelta 입니다.
 
@@ -231,8 +231,9 @@ Vector3.Dot
 ```
 이것은 내적을 말합니다. <br/><br/>
 ![10](https://user-images.githubusercontent.com/80252681/129086079-7e8cda7c-e4d7-4afa-9c66-dc103de4a35a.jpg)<br/>
-$\theta$ 는 두 벡터 사이의 각을 말합니다.<br/><br/>
+$\theta$ 는 두 벡터 사이의 각을 말합니다.<br/><br/><br/>
 
+그렇다면 이제 다시 한 번 보겠습니다.
 ```csharp
 Vector3.Dot(progressDelta, progressPoint.direction) < 0
 ```
