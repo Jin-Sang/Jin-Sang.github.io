@@ -145,7 +145,23 @@ AI차량이 어떻게 주행하는지 보겠습니다.
 
 {% include video id="gyy6s5fxehE" provider="youtube" %}
 
-차량이 **주행함에 따라 경로를 따라 목표가 바뀌고 있음**이 확인됩니다. (마치 앞을 보고 운전하는 사람같이)<br/><br/><br/>
+차량이 **주행함에 따라 경로를 따라 목표가 바뀌고 있음**이 확인됩니다. (마치 앞을 보고 운전하는 사람같이)<br/><br/>
+```csharp
+ [SerializeField] private float lookAheadForTargetOffset = 5;
+        // The offset ahead along the route that the we will aim for
+
+        [SerializeField] private float lookAheadForTargetFactor = .1f;
+        // A multiplier adding distance ahead along the route to aim for, based on current speed
+
+        [SerializeField] private float lookAheadForSpeedOffset = 10;
+        // The offset ahead only the route for speed adjustments (applied as the rotation of the waypoint target transform)
+
+        [SerializeField] private float lookAheadForSpeedFactor = .2f;
+        // A multiplier adding distance ahead along the route for speed adjustments
+
+        [SerializeField] private ProgressStyle progressStyle = ProgressStyle.SmoothAlongRoute;
+        // whether to update the position smoothly along the route (good for curved paths) or just when we reach each waypoint.
+```
 
 
 
