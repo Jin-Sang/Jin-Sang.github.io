@@ -20,10 +20,10 @@ use_math: true
 
 두 종류의 경로 모드가 존재
 
-* SmoothAlongRoute 방식 : 웨이포인트를 부드럽게 연결 경로<br/>
+* SmoothAlongRoute 방식 : 웨이포인트를 부드럽게 연결 경로<br/><br/>
 AI가 부드러운 속도와 주행목표지점 조정으로 인간과 자연스러운 주행을 구현
 
-* PointToPoitn 방식 : 오로지 웨이포인트를 직선으로 연결한 경로<br/>
+* PointToPoitn 방식 : 오로지 웨이포인트를 직선으로 연결한 경로<br/><br/>
 점대점을 직선으로 이동하므로 AI가 딱딱하고 갑작스러운 주행을 보인다.  
 
 
