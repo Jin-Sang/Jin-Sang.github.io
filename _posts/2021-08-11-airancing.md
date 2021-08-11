@@ -7,7 +7,7 @@ use_math: true
 ---
 # Machine Learning
 
-
+<br/><br/>
 # **1. 게임 소개**
 
 * 서킷을 게이머 차량과 AI 차량이 주행하는 게임
