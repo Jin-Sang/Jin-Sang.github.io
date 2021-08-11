@@ -221,6 +221,11 @@ Vector3.Dot(progressDelta, progressPoint.direction) < 0
 progressDelta는 progressPoint(지금까지 운행을 경로 위에 표시했을 때 위치, 즉 진행 상태)와 실제 지금 차량 위치의 차이를 나타내는 벡터입니다. 
 
 
+![8](https://user-images.githubusercontent.com/80252681/129084512-11b82f7a-4d5b-4e6f-ab8b-61f548e766b8.jpg)
+![9](https://user-images.githubusercontent.com/80252681/129085101-9aef832c-344f-463a-a371-0ffec76cba64.jpg)
+즉, 보라색 벡터가 progressDelta 입니다.
+
+
 * **PointToPoint** 모드 : 생성된 **경로를 인식하지 않고 웨이포인트를 순차적으로 목표**로 삼아 운행<br/><br/>
 ( 경로를 무시하고 웨이포인트만 보고 간다.)<br/><br/>
 
