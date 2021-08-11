@@ -190,12 +190,31 @@ if (progressStyle == ProgressStyle.SmoothAlongRoute)
 
 ```
 
-progressDistance(경로에서 현재 위치)에서 Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값을 더해서 그 만큼 앞을 보고있습니다.<br/>
-즉, **Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞**을 보고 있습니다.
+progressDistance(경로에서 현재 거리)에서 Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값을 더해서 그 만큼 앞을 보고있습니다.<br/>
+즉, **Offset(미리보는 범위)와 Factor(가중치)에 속도를 곱한 값 만큼 앞**을 보고 있습니다.<br/><br/><br/>
 
-**중요 : 어떻게 현위치를 파악하고 있을까?**
+**중요 : 어떻게 현위치를 파악하고 있을까?**<br/><br/>
 
+* progressDistance(경로상 현재 진행 거리)를 어떻게 알 수 있을까?<br/>
+차량은 운행하다보면 경로를 벗어날 수 있는데 그럴 땐 어떻게 벗어난 지점으로 돌아오지 않고 자연스럽게 경로 진행 방향 이동하며 다시 돌아오는 것인지 궁금했습니다.<br/><br/>
 
+현 위치를 파악하는 코드
+```csharp
+// get our current progress along the route
+                progressPoint = circuit.GetRoutePoint(progressDistance);
+                Vector3 progressDelta = progressPoint.position - transform.position;
+                if (Vector3.Dot(progressDelta, progressPoint.direction) < 0)
+                {
+                    progressDistance += progressDelta.magnitude*0.5f;
+                }
+
+```
+코드는 짧았지만, 해석하는데 오랜 시간이 걸렸습니다.
+```csharp
+Vector3.Dot(progressDelta, progressPoint.direction) < 0
+```
+특히 이 부분에서 오랜 시간이 걸렸습니다.<br/>
+먼저 
 
 
 * **PointToPoint** 모드 : 생성된 **경로를 인식하지 않고 웨이포인트를 순차적으로 목표**로 삼아 운행<br/><br/>
