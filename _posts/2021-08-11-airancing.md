@@ -286,7 +286,22 @@ $\theta$ 가 $90^\circ$보다 크고 $180^\circ$ 보다 작아야 한다. <br/>
 
 {% include video id="pTRe75TJ1O0" provider="youtube" %}
 
-차량이 **경로와 현위치를 무시하고 오직 웨이포인트만을 목표**로 설정하고 있습니다.<br/><br/><br/>
+차량이 **경로와 현위치를 무시하고 오직 웨이포인트만을 목표**로 설정하고 있습니다.<br/><br/>
+
+```csharp
+ // point to point mode. Just increase the waypoint if we're close enough:
+
+                Vector3 targetDelta = target.position - transform.position;
+                if (targetDelta.magnitude < pointToPointThreshold)
+                {
+                    progressNum = (progressNum + 1)%circuit.Waypoints.Length;
+                }
+
+
+                target.position = circuit.Waypoints[progressNum].position;
+                target.rotation = circuit.Waypoints[progressNum].rotation;
+```
+차량이 웨이포인트의 일정거리(pointToPointThreshold)안으로 들어오면 다음 순서의 웨이포인트를 목표로 바꾸고 운행한다.<br/><br/><br/>
 
 ***실제 주행 중인 차량이 목표를 어디로 보면서 가느냐의 문제인데 이것은 AI차량의 주행(5장) 부분에서 언급하겠지만 속도 조절과 관련되어 부드러운 주행에 큰 영향을 끼친다. 실제 인간은 차의 약간 앞을 보면서(목표)로 하고 주행한다.***<br/><br/><br/>
 
