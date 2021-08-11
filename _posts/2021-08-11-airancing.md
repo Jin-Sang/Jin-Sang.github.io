@@ -349,7 +349,7 @@ case BrakeCondition.TargetDirectionDifference:
 따라서 갑작스러운 목표 변화에 따른 갑작스러운 속도 변화 또는 방향 전환 등, 
 부자연스러운 주행이 될 수 밖에 없습니다.<br/><br/><br/>
 
-&#128584;**차량 충돌시 대처
+&#128584;**차량 충돌시 대처**
 
 ```csharp
 // Evasive action due to collision with other cars:
@@ -396,5 +396,7 @@ case BrakeCondition.TargetDirectionDifference:
 <br/><br/><br/><br/><br/><br/>
 **추가 해야할 점**<br/><br/>
 
-* 강화 학습을 통한 AI 훈련 
+* 강화 학습을 통한 AI 훈련<br/>
+훈련을 시킨다면 어떤 식으로 해야할지 고민이 되었습니다.<br/>
+훈련 한다면 3장 웨이포인트들을 연결하는 최적의 곡선 경로를 찾는 것과 
 
