@@ -7,6 +7,9 @@ use_math: true
 ---
 # Machine Learning
 
+![5](https://user-images.githubusercontent.com/80252681/129064097-d3bba7c7-b5b2-4e56-9049-4cb69ae0698e.jpg)
+
+
 <br/><br/>
 # **1. 게임 소개**
 
