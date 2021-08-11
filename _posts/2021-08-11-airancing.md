@@ -47,7 +47,7 @@ NON-SmoothRoute 방식
 
 
 <br/><br/>
-## **3.1 SmoothRoute 방식 설명**
+## &#9997;**3.1 SmoothRoute 방식 설명**
 <br/>
 
 * 핵심은 웨이포인트들을 **부드러운 곡선으로 연결하는 방식**이다.<br/>
