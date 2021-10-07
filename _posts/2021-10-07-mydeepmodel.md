@@ -1,3 +1,12 @@
+---
+layout: single
+title:  "MyFirstDeepModel"
+font-size: 5
+use_math: true
+
+---
+# Deep Learning
+<br/>
 
 # **저수준 선형 분류 신경망 추가기능 구현**
 ---
