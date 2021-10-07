@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "MyFirstDeepModel"
+title:  "My First Deep Model"
 font-size: 5
 use_math: true
 
