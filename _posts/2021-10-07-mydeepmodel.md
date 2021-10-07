@@ -7,7 +7,9 @@ use_math: true
 ---
 # Deep Learning
 <br/>
+
 ![de2](https://user-images.githubusercontent.com/80252681/136391512-aedb2d7c-bd42-468f-bf5f-ad1132effea5.png)
+
 <br/>
 <br/>
 딥러닝 모델의 이진 분류 모델을 다양한 기능을 추가하여 만들어 보겠습니다.:tongue: 
