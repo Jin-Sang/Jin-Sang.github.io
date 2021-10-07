@@ -85,7 +85,8 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![output_11_0](https://user-images.githubusercontent.com/80252681/136390509-8e2e749a-ccff-4155-bd68-e1efcb01342a.png)
+
 
 
 ## **가중치 변수 텐서 생성(3층구현)**
@@ -1277,7 +1278,7 @@ plt.show()
 ```
 
 
-![png](output_70_0.png)
+![output_70_0](https://user-images.githubusercontent.com/80252681/136390573-16a9963b-5fae-4793-b514-28f6e005c221.png)
 
 
 앞의 그림과 비교해보았을 때 전체적으로 비슷한 양상을 보이고 있습니다. 세밀하게 따졌을 때는 경계부분이 다르긴 합니다.
