@@ -9,6 +9,9 @@ use_math: true
 <br/>
 
 
+![workflow](https://user-images.githubusercontent.com/80252681/139578252-ede5829c-4c46-4b35-a957-c85156998b9d.png)
+
+
 
 # **머신러닝의 작업흐름**&#128113;
 ---
