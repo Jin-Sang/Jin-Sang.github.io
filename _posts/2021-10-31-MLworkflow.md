@@ -8,9 +8,7 @@ use_math: true
 # Deep Learning
 <br/>
 
-```python
 
-```
 
 # **머신러닝의 작업흐름**
 ---
